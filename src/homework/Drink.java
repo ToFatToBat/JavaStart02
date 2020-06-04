@@ -13,6 +13,7 @@ public class Drink {
     int mlOfingridient2;
     int mlOfingridient3;
     int mlOfingridient4;
+    int dddd;
 
     public Drink(String name, double price, boolean isAlcohol, String ingridient1, String ingridient2, String ingridient3, String ingridient4, String ingridient5, int mlOfingridient1, int mlOfingridient2, int mlOfingridient3, int mlOfingridient4) {
         this.name = name;
