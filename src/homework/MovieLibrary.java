@@ -13,7 +13,7 @@ public class MovieLibrary {
         System.out.printf("Tytuł: %s\n", movie.title);
         System.out.printf("Opis: %s\n", movie.description);
         System.out.printf("Reżyser: %s\n", movie.director);
-        System.out.printf("Ocena: %f/10\n", movie.rating);
+        System.out.println("Ocena: " + movie.rating + "/10");
         System.out.printf("Czy otrzymał Oskara: %s\n", movie.oscars);
     }
 }
