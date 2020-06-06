@@ -1,20 +1,20 @@
 package homework;
 
 public class Ingridient {
-    String ingridient;
+    String name;
     int amount;
 
-    public Ingridient(String ingridient, int amount) {
-        this.ingridient = ingridient;
+    public Ingridient(String name, int amount) {
+        this.name = name;
         this.amount = amount;
     }
 
-    public String getIngridient() {
-        return ingridient;
+    public String getName() {
+        return name;
     }
 
-    public void setIngridient(String ingridient) {
-        this.ingridient = ingridient;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAmount() {
@@ -28,7 +28,7 @@ public class Ingridient {
     @Override
     public String toString() {
         return "Ingridient{" +
-                "ingridient='" + ingridient + '\'' +
+                "name='" + name + '\'' +
                 ", amount=" + amount +
                 '}';
     }

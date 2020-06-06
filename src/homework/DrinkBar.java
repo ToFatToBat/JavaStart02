@@ -2,14 +2,19 @@ package homework;
 
 public class DrinkBar {
     public static void main(String[] args) {
-       // Drink cosmopolitan = new Drink("Cosmopolitan", 24,true, "orangeVodka", "orangeLiqueur", "cranberryJuice", "limeJuice", "limePeel", 60, 15,40, 10);
 
-        Ingridient [] ingridients = new Ingridient[1];
-        ingridients[0] = new Ingridient("woda", 100);
-
-        Drink drink = new Drink("woda",20, true,ingridients);
+        Ingridient[] ingridients = new Ingridient[2];
+        ingridients[0] = new Ingridient("woda", 50);
+        ingridients[1] = new Ingridient("sok", 100);
 
 
+        int ingridientsAmountSum = 0;
+        for (int i = 0; i < ingridients.length; i++) {
+            ingridientsAmountSum = ingridientsAmountSum + ingridients[i].amount;
+        }
+
+
+        Drink drink = new Drink("woda", 20, true, ingridients, ingridientsAmountSum);
 
 
         System.out.println(drink.toString());
